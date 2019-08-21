@@ -35,6 +35,6 @@ plt.scatter(X, Y)
 plt.plot([min(X), max(X)], [min(Y_pred), max(Y_pred)], color='red')  # regression line
 plt.xlabel("Day of the month")
 plt.ylabel("Temperature in Celsius")
-plt.figtext(.7, .8, "a = {}\nb = {}".format(a, b), fontsize=16)
+plt.figtext(.2, .8, "Y_pred = {} * X + {}".format(round(a, 4), round(b, 4)), fontsize=16)
 # plt.show()
 plt.savefig('results/model_2.png')
